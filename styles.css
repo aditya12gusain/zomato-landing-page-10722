@@ -127,3 +127,131 @@
     width: 95%;
   }
 }
+
+.container {
+  margin: 3rem auto;
+  width: 90%;
+}
+
+.we__offer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.we__offer_card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.we__offer_card:hover {
+  transform: scale(1.05);
+}
+
+.we__offer_card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.we__offer_content {
+  padding: 10px;
+}
+
+.we__offer_content h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.we__offer_content p {
+  font-size: 12px;
+}
+
+.collections h1 {
+  font-weight: 600;
+}
+
+.collections .sub__heading_container {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sub__heading_container span:nth-child(2) {
+  color: #ff7e8b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.collections_card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.collections_card_container .card {
+  height: 300px;
+  min-width: 240px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1 {
+  background-image: url("images/collection1.jpg");
+}
+
+.card2 {
+  background-image: url("images/collection2.jpg");
+}
+
+.card3 {
+  background-image: url("images/collection3.jpg");
+}
+
+.card4 {
+  background-image: url("images/collection4.jpg");
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+  z-index: 5;
+}
+
+.collections_card_container .card .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  z-index: 6;
+}
+
+.content h4 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
